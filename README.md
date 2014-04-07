@@ -42,3 +42,11 @@ Serve a file
 > git run file.go
 
 Visit *http://127.0.0.1:8080"
+
+## Template
+
+Simple HTML Response using template
+
+> git run template.go
+
+Visit *http://127.0.0.1:8080"
