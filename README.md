@@ -19,6 +19,14 @@ Set the header on Golang web-server
 
 curl -i localhost:8080
 
+## Redirect
+
+Redirect response
+
+> git run redirect.go
+
+Visit *http://127.0.0.1:8080/redirect"
+
 ## JSON
 
 Response with simple JSON from struct
