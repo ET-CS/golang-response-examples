@@ -66,3 +66,11 @@ Nested Templates response
 > git run nested.go
 
 Visit *http://127.0.0.1:8080"
+
+## AJAX
+
+Simple AJAX call to submit and recieve byte[] data
+
+> git run ajax.go
+
+Visit *http://127.0.0.1:8080"
