@@ -26,3 +26,11 @@ Response with simple JSON from struct
 > git run json.go
 
 Visit *http://127.0.0.1:8080"
+
+## XML
+
+Response with simple XML from struct
+
+> git run xml.go
+
+Visit *http://127.0.0.1:8080"
