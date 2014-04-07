@@ -67,6 +67,14 @@ Nested Templates response
 
 Visit *http://127.0.0.1:8080"
 
+## Form
+
+HTML Form POST and Response
+
+> go run form.go
+
+Visit *http://127.0.0.1:8080"
+
 ## AJAX
 
 Simple AJAX call to submit and recieve byte[] data
