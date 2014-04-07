@@ -1,6 +1,6 @@
 // Miminal golang web-server implementation
 // Visit: http://127.0.0.1:8080/Your-name
-package minimal 
+package main
 
 import (
     "net/http"
