@@ -9,7 +9,10 @@ import (
 
 // Default Request Handler
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
+    // using fmt.fprintf()
     fmt.Fprintf(w, "<h1>Hello %s!</h1>", r.URL.Path[1:])
+    // using w.Write()
+    w.Write([]byte("OK"))
 }
 
 func main() {
