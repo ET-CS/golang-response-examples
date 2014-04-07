@@ -82,3 +82,11 @@ Simple AJAX call to submit and recieve byte[] data
 > go run ajax.go
 
 Visit *http://127.0.0.1:8080"
+
+## AJAX - JSON
+
+Simple AJAX JSON request and response
+
+> go run ajax-json.go
+
+Visit *http://127.0.0.1:8080"

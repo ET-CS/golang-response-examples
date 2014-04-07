@@ -1,4 +1,4 @@
-// Parsing HTML from Template using golang web-server
+// HTML form minimal example using golang web-server
 // Visit: http://127.0.0.1:8080
 package main
 
