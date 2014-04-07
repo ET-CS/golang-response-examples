@@ -34,3 +34,11 @@ Response with simple XML from struct
 > git run xml.go
 
 Visit *http://127.0.0.1:8080"
+
+## File
+
+Serve a file
+
+> git run file.go
+
+Visit *http://127.0.0.1:8080"
