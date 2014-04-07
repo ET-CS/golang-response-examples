@@ -22,9 +22,18 @@ func defaultHandler(w http.ResponseWriter, r *http.Request) {
         http.Error(w, err.Error(), http.StatusInternalServerError)
         return
     }
+
+    // Pass template to http.ResponseWriter.
     if err := tmpl.Execute(w, data); err != nil {
         http.Error(w, err.Error(), http.StatusInternalServerError)
     }
+
+    // To buffer from template to string instead use:
+    //buf := new(bytes.Buffer)
+    //if err := tmpl.Execute(buf, data); err != nil {
+    //    http.Error(w, err.Error(), http.StatusInternalServerError)
+    //}
+    //templateString := buf.String()
 }
 
 func main() {
