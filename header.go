@@ -1,13 +1,15 @@
-package main 
+// Set header on golang web-server
+// Try: curl -i localhost:8080
+package main
 
 import (
     "net/http"
-    "fmt"
 )
 
 // Default Request Handler
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "<h1>Hello %s!</h1>", r.URL.Path[1:])
+    w.Header().Set("Server", "A Go Web Server")
+    w.WriteHeader(200)
 }
 
 func main() {
