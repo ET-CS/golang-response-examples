@@ -1,4 +1,4 @@
-// Parsing HTML from Template using golang web-server
+// Nested templates using golang web-server
 // Visit: http://127.0.0.1:8080
 package main
 
@@ -16,8 +16,10 @@ type Data struct {
 func defaultHandler(w http.ResponseWriter, r *http.Request) {
     data := Data{"World!"}
 
-    fp := path.Join("templates", "index.html")
-    tmpl, err := template.ParseFiles(fp)
+    lp := path.Join("templates", "layout.html")
+    fp := path.Join("templates", "content.html")
+
+    tmpl, err := template.ParseFiles(lp, fp)
     if err != nil {
         http.Error(w, err.Error(), http.StatusInternalServerError)
         return

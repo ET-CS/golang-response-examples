@@ -50,3 +50,11 @@ Simple HTML Response using template
 > git run template.go
 
 Visit *http://127.0.0.1:8080"
+
+## Nested Templates
+
+Nested Templates response
+
+> git run nested.go
+
+Visit *http://127.0.0.1:8080"
