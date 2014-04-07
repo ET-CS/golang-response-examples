@@ -7,7 +7,7 @@ Golang examples with several client\server responses.
 
 Simple minimal Golang web-server
 
-> git run minimal.go
+> go run minimal.go
 
 Visit *http://127.0.0.1:8080/My-Name*
 
@@ -15,7 +15,7 @@ Visit *http://127.0.0.1:8080/My-Name*
 
 Set the header on Golang web-server
 
-> git run header.go
+> go run header.go
 
 curl -i localhost:8080
 
@@ -23,7 +23,7 @@ curl -i localhost:8080
 
 Redirect response
 
-> git run redirect.go
+> go run redirect.go
 
 Visit *http://127.0.0.1:8080/redirect"
 
@@ -31,7 +31,7 @@ Visit *http://127.0.0.1:8080/redirect"
 
 Response with simple JSON from struct
 
-> git run json.go
+> go run json.go
 
 Visit *http://127.0.0.1:8080"
 
@@ -39,7 +39,7 @@ Visit *http://127.0.0.1:8080"
 
 Response with simple XML from struct
 
-> git run xml.go
+> go run xml.go
 
 Visit *http://127.0.0.1:8080"
 
@@ -47,7 +47,7 @@ Visit *http://127.0.0.1:8080"
 
 Serve a file
 
-> git run file.go
+> go run file.go
 
 Visit *http://127.0.0.1:8080"
 
@@ -55,7 +55,7 @@ Visit *http://127.0.0.1:8080"
 
 Simple HTML Response using template
 
-> git run template.go
+> go run template.go
 
 Visit *http://127.0.0.1:8080"
 
@@ -63,7 +63,7 @@ Visit *http://127.0.0.1:8080"
 
 Nested Templates response
 
-> git run nested.go
+> go run nested.go
 
 Visit *http://127.0.0.1:8080"
 
@@ -71,6 +71,6 @@ Visit *http://127.0.0.1:8080"
 
 Simple AJAX call to submit and recieve byte[] data
 
-> git run ajax.go
+> go run ajax.go
 
 Visit *http://127.0.0.1:8080"
