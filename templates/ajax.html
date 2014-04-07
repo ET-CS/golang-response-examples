@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script>
+  $(document).ready(function (){
+    $.ajax({
+      url: '/ajax',
+      type: "post",
+      data: "Lorem ipsum dolor sit amet, ",
+      dataType: 'html',
+      beforeSend: function() {
+        $('#response').append("loading..<br/>");
+      },
+      success: afterSend
+    });
+  });
+  function afterSend(result) {
+    $('#response').append(result);
+  };
+  </script>
+</head>
+<body>
+  <h1>Hello, {{ .Name }}</h1>
+  <h2>Post and recieve a string using JSON</h2>
+  <p id="response"></p>
+</body>
+</html>
