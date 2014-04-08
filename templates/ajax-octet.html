@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-2.1.0.min.js"></script>
+  <script>
+  $(document).ready(function (){
+    $.ajax({
+      type: 'GET',
+      url: window.location.href + 'ajax',
+      contentType: 'application/octet-stream; charset=utf-8',
+      success: function(result) {
+        $('#response').append(result.Name);
+      },
+      processData: false
+    });
+  });
+  </script>
+</head>
+<body>
+  Hello, <span id="response"></span>
+</body>
+</html>

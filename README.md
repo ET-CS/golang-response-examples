@@ -90,3 +90,11 @@ Simple AJAX JSON request and response
 > go run ajax-json.go
 
 Visit *http://127.0.0.1:8080"
+
+## AJAX - OCTET
+
+Simple AJAX JSON Octet response
+
+> go run ajax-octet.go
+
+Visit *http://127.0.0.1:8080"
