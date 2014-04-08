@@ -10,6 +10,9 @@ import (
 type Response struct {
     Name    string
     Hobbies []string
+    // remember: Go enforce you to use uppercase first letter in each field for json.Marshal.
+    // If you want to use lower case json response, you can tag the fields like:
+    // Hobbies []string `json:"hobbies"`
 }
 
 // Default Request Handler
