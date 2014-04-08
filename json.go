@@ -7,6 +7,8 @@ import (
     "encoding/json"
 )
 
+// Maybe you want to struct your JSON in a specification? 
+// http://labs.omniti.com/labs/jsend
 type Response struct {
     Name    string
     Hobbies []string
